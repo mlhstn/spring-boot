@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Customer Refistration Form</title>
+    <title>Customer Registration Form</title>
 
     <style>
         .error {color:red}
@@ -14,7 +14,7 @@
 
 <br><br>
 
-<form th:action="@{/processForm}" th:object="customer" method="POST">
+<form th:action="@{/processForm}" th:object="${customer}" method="POST">
 
 
     First name: <input type="text" th:field="*{firstName}" />
